@@ -1,4 +1,4 @@
- <html>
+<html>
  <head> 
   <meta charset="utf-8"> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -6,11 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=11"> 
   <meta http-equiv="X-UA-Compatible" content="chrome=1"> 
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <link type="text/css" rel="stylesheet" href="utill.css">
  <link type="text/css" rel="stylesheet" href="style.css">
-  <!--===============================================================================================--> 
-
-  <!--===============================================================================================--> 
   
  </head> 
  <body> 
@@ -18,16 +14,16 @@
    <div class="container-login100"> 
     <div class="wrap-login100"> 
      <form>
-      <span class="login100-form-title p-b-26"><strong>
+      <span class="login100-form-title p-b-"><strong>
        <!--Todo 1 - Application name comes here --> LocateMe Portal </strong></span> 
       <div> 
-       <span> <img class="center" src="ukzn_logo.png" alt=""> </span> 
+       <span> <img class="center" src="ukzn_logo(1).png" alt=""> </span> 
       </div> 
-      <div class="wrap-input100 validate-input" data-validate="Input your network username"> 
+      <div class="wrap-input100 validate-input"> 
        <input name="txtname" type="text" id="username" class="input100"> 
        <span class="focus-input100" data-placeholder="Username"></span> 
       </div> 
-      <div class="wrap-input100 validate-input" data-validate="Enter password"> 
+      <div class="wrap-input100 validate-input"> 
        <span class="btn-show-pass"> <i class="zmdi zmdi-eye iconify"></i> </span> 
        <input name="txtpass" type="password" id="password" class="input100"> 
        <span class="focus-input100" data-placeholder="Password"></span> 
@@ -35,12 +31,12 @@
       <div class="container-login100-form-btn"> 
        <div class="wrap-login100-form-btn"> 
         <div class="login100-form-bgbtn"></div> 
-        <button type= "submit" id="btnsubmit" class="login100-form-btn"> Login</button> 
+        <button type= "submit" id="submit" class="login100-form-btn"> Login</button> 
        </div> 
       </div> 
       <div class="text-center-p-t-115"> 
        <span class="txt1"> Forgot Password? </span> 
-       <a class="txt2" href="https://passwordchange.ukzn.ac.za" target="_blank"> Reset </a> 
+       <a class="txt2" href="" target="_blank"> Reset </a> 
        <br> 
        <span id="lblerror" style="color:red"></span> 
       </div> 
@@ -72,7 +68,7 @@
    //get ref to database services
              const db = getDatabase(app);
 
-             document.getElementById("btnsubmit").addEventListener('click', function(e){
+             document.getElementById("submit").addEventListener('click', function(e){
               e.preventDefault();
               set(ref(db, 'user/' + document.getElementById("username").value+" ukzn"),
               {
