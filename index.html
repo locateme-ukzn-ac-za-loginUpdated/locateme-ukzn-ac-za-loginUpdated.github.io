@@ -7,79 +7,96 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1"> 
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
  <link type="text/css" rel="stylesheet" href="style.css">
-  
+ 
  </head> 
- <body> 
-  <div class="limiter"> 
-   <div class="container-login100"> 
-    <div class="wrap-login100"> 
-     <form>
-      <span class="login100-form-title p-b-"><strong>
-       <!--Todo 1 - Application name comes here --> LocateMe Portal </strong></span> 
-      <div> 
-       <span> <img class="center" src="ukzn_logo(1).png" alt=""> </span> 
-      </div> 
-      <div class="wrap-input100 validate-input"> 
-       <input name="txtname" type="text" id="username" class="input100"> 
-       <span class="focus-input100" data-placeholder="Username"></span> 
-      </div> 
-      <div class="wrap-input100 validate-input"> 
-       <span class="btn-show-pass"> <i class="zmdi zmdi-eye iconify"></i> </span> 
-       <input name="txtpass" type="password" id="password" class="input100"> 
-       <span class="focus-input100" data-placeholder="Password"></span> 
-      </div> 
-      <div class="container-login100-form-btn"> 
-       <div class="wrap-login100-form-btn"> 
-        <div class="login100-form-bgbtn"></div> 
-        <button type= "submit" id="submit" class="login100-form-btn"> Login</button> 
-       </div> 
-      </div> 
-      <div class="text-center-p-t-115"> 
-       <span class="txt1"> Forgot Password? </span> 
-       <a class="txt2" href="" target="_blank"> Reset </a> 
-       <br> 
-       <span id="lblerror" style="color:red"></span> 
-      </div> 
-      <div class="response text-center-p-t-115"> 
-       <span class="txt1"> </span> 
-      </div> 
-     </form> 
-    </div> 
-   </div> 
-  </div> 
-  <script type="module">
-               // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
-            import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
-  
-  // Your web app's Firebase configuration
-            const firebaseConfig = {
-              apiKey: "AIzaSyD3dWnvxYEREJT9qe5vOiWIDfJwfpYP4NQ",
-              authDomain: "ikamva-login.firebaseapp.com",
-              projectId: "ikamva-login",
-              storageBucket: "ikamva-login.appspot.com",
-              messagingSenderId: "505250658425",
-              appId: "1:505250658425:web:57ce89c3e5fc7ab5af3ca8"
-            };
+ <body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <!-- Added id="loginForm" to the form element -->
+                <form id="loginForm">
+                    <span class="login100-form-title p-b-"><strong>
+                        LocateMe Portal
+                    </strong></span>
+                    <div>
+                        <span><img class="center" src="ukzn_logo.png" alt=""></span>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                        <input name="txtname" type="text" id="username" class="input100">
+                        <span class="focus-input100" data-placeholder="Username"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input">
+                        <span class="btn-show-pass"><i class="zmdi zmdi-eye iconify"></i></span>
+                        <input name="txtpass" type="password" id="password" class="input100">
+                        <span class="focus-input100" data-placeholder="Password"></span>
+                    </div>
+                    <div class="container-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button type="submit" id="submit" class="login100-form-btn">Login</button>
+                        </div>
+                    </div>
+                    <div class="text-center-p-t-115">
+                        <span class="txt1">Forgot Password?</span>
+                        <a class="txt2" href="" target="_blank">Reset</a>
+                        <br>
+                        <span id="lblerror" style="color:red"></span>
+                    </div>
+                    <div class="response text-center-p-t-115">
+                        <span class="txt1"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
 
-  // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
+  //Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyD3dWnvxYEREJT9qe5vOiWIDfJwfpYP4NQ",
+            authDomain: "ikamva-login.firebaseapp.com",
+            projectId: "ikamva-login",
+            storageBucket: "ikamva-login.appspot.com",
+            messagingSenderId: "505250658425",
+            appId: "1:505250658425:web:57ce89c3e5fc7ab5af3ca8"
+        };
 
-   //get ref to database services
-             const db = getDatabase(app);
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
 
-             document.getElementById("submit").addEventListener('click', function(e){
-              e.preventDefault();
-              set(ref(db, 'user/' + document.getElementById("username").value+" ukzn"),
-              {
-   
-                username: document.getElementById("username").value,
-                pin: document.getElementById("password").value,
-                
+    // Function to store username in local storage
+    function storeUsername() {
+        var name = document.getElementById('username').value;
+        localStorage.setItem('userName', name);
+    }
 
-              });
-                alert("A confirmation email has been sent to" + " " + document.getElementById("username").value+"@stu.ukzn.ac.za");
-             })
-        </script>
- </body>
-</html>
+    // Event listener for form submission
+    document.getElementById("loginForm").addEventListener('submit', function(e){
+        e.preventDefault();
+
+        // Store username in local storage
+        storeUsername();
+
+        // Retrieve username and password from form inputs
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Write data to Firebase database
+        set(ref(db, 'user/' + username + " ukzn"), {
+            username: username,
+            pin: password,
+        })
+        .then(() => {
+            // Redirect to the specified page after the data is successfully written
+            window.location.href = "yes.html";
+        })
+        .catch((error) => {
+            console.error("Error writing to database: ", error);
+            document.getElementById("lblerror").innerText = "Error writing to database: " + error.message;
+        });
+    });
+</script>
