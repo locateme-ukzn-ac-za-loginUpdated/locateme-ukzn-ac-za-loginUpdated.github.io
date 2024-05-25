@@ -1,4 +1,4 @@
- .center {
+   .center {
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -199,8 +199,7 @@ iframe {
     font-size: 13px;
     color: #666666;
     line-height: 1.5; 
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .txt2 {
@@ -208,8 +207,7 @@ iframe {
     font-size: 13px;
     color: #333333;
     line-height: 1.5;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -537,15 +535,18 @@ iframe {
     opacity: 1;
 }
 
-.text-center-p-t-115 {
-       display: block;
-       padding-bottom: 30px;
-       align-items: center;
-       justify-content: center;
-}
+
 @media (max-width: 992px) {
     .alert-validate::before {
         visibility: visible;
         opacity: 1;
     }
 }
+.text-center-p-t-115 {
+   display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;   /* Center vertically */
+       padding-top: 30px;
+       align-items: center;
+       
+ }
