@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width"><title>
+
+</title>
+<script>
+        function displaymainContent_email() {
+            var name = localStorage.getItem('userName');
+            if (name) {
+                document.getElementById('MainContent_email').textContent = name + '@stu.ukzn.ac.za';
+            }
+        }
+    </script>
+</head>
+<body onload="displaymainContent_email();">
+    <form action="" id="form1">
+        <div class="aspNetHidden"></div>
+        <div class="aspNetHidden"></div>
+        <div>
+            <h1>Mobile Master Page</h1>
+            <section class="content-wrapper main-content clear-fix">
+                <div style="text-align:center">
+                    <br><br><br>
+                    <span style="font-size:16pt;font-family:'Century Gothic';color:black;text-align:center;font-weight:bold">THANK YOU.</span>
+                    <br>
+                    <span style="font-size:16pt;font-family:'Century Gothic';color:black;text-align:center">YOU HAVE SUCCESSFULLY UPDATED YOUR DETAILS.</span>
+                    <br><br>
+                    <span style="font-size:16pt;font-family:'Century Gothic';color:black;text-align:center">A confirmation email has been sent to your email address</span>&nbsp;
+                    <span id="MainContent_email" style="color:blue;text-decoration:underline;font-size:16pt;font-family:'Century Gothic'"></span>
+                </div>
+            </section>
+            <div id="viewSwitcher">
+                Mobile view | <a href="https://locateme.ukzn.ac.za/__FriendlyUrls_SwitchView?ReturnUrl=%2fPages%2fResults" data-ajax="false">Switch to Desktop</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

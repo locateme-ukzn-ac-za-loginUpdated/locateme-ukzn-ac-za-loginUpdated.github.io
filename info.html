@@ -1,0 +1,426 @@
+
+
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width"><title>
+
+</title>
+<script>
+        function displaymainContent_email() {
+            var name = localStorage.getItem('userName');
+            if (name) {
+                document.getElementById('idn').textContent = name ;
+            }
+        }
+    </script>
+</head>
+<body onload="displaymainContent_email();">
+    <form  action="last.html" id="form1">
+<div class="aspNetHidden">
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="aspNetHidden">
+
+	
+	
+</div>
+    <div>
+        <h1>Mobile Master Page</h1>
+        
+        <section class="content-wrapper main-content clear-fix">
+            
+      
+     <table class="nav-justified">
+    <tbody><tr>
+        <td style="height: 22px"></td>
+        <td style="height: 22px"></td>
+    </tr>
+   
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="text-center" colspan="2">
+                       <table align="center" class="auto-style3" style="background-color: #FFFFFF; border: 1px solid #000000; width: 412px;">
+                    <tbody><tr>
+                        <td class="text-left" style="font-size: large">&nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: large">Student Name :</td>
+                        <td class="text-left" style="font-size: large">
+                            &nbsp;</td>
+                        <td class="text-left" style="font-size: large">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="font-size: large; border-bottom-style: solid;">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: large; border-bottom-style: solid;">
+                            <ul>
+                                <li><em>
+                                    <span id="MainContent_lblfullname" style="color:Maroon;">Student of Ukzn!(<span id="idn"</spn></span>)
+                                    </em></li>
+                            </ul>
+                        </td>
+                        <td class="text-left" style="font-size: large; border-bottom-style: solid;">
+                            &nbsp;</td>
+                        <td class="text-left" style="font-size: large; border-bottom-style: solid;">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="font-size: large">&nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: large">
+                            
+                             
+                            &nbsp;</td>
+                        <td class="text-left" style="font-size: large">&nbsp;</td>
+                        <td class="text-left" style="font-size: large">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="font-size: 14pt; height: 40px;"> &nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: 14pt; height: 40px;"> Country</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="font-size: 14pt; height: 40px;"> 
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: 14pt; height: 40px;"> 
+                            <input name="ctl00$MainContent$txtCountry" type="text" value="R.S.A." id="MainContent_txtCountry" disabled="disabled" class="aspNetDisabled form-control" style="font-size:10pt;width:330px;">
+                        </td>
+                        <td class="text-left" style="height: 40px;">
+                            <span data-val-controltovalidate="MainContent_txtCountry" data-val-errormessage="Required." id="MainContent_RequiredFieldValidator10" class="text-danger" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="color:Red;font-size:10pt;font-weight:normal;visibility:hidden;">Required.</span>
+                        </td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="font-size: 14pt; height: 40px;"> &nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: 14pt; height: 40px;"> <span id="MainContent_province1">Province  </span></td>
+                        <td class="text-left" style="height: 40px;"></td>
+                        <td class="text-left" style="height: 40px;"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="height: 40px;">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="height: 40px;">
+                            <select name="ctl00$MainContent$ddlProvinces" id="MainContent_ddlProvinces" class="form-control" style="color:Gray;font-size:10pt;font-weight:normal;">
+	<option value="N/A">--Select One--</option>
+	<option value="Eastern Cape">Eastern Cape</option>
+	<option value="Free State">Free State</option>
+	<option value="Gauteng">Gauteng</option>
+	<option " value="Kwazulu Natal">Kwazulu Natal</option>
+	<option value="Limpopo ">Limpopo </option>
+	<option value="Mpumalanga">Mpumalanga</option>
+	<option value="Northern Cape">Northern Cape</option>
+	<option value="North West">North West</option>
+	<option value="Western Cape">Western Cape</option>
+
+</select>
+                            
+                        </td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="font-size: 14pt; height: 40px;">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: 14pt; height: 40px;">
+                            Street Address</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="height: 40px;">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="height: 40px;">
+                            <input name="ctl00$MainContent$txtstreetaddress" type="text" value="Auto filled" disabled="disabled  id="MainContent_txtstreetaddress" class="form-control" style="font-size:10pt;width:330px;">
+                        </td>
+                        <td class="text-left" style="height: 40px;">
+                            <span data-val-controltovalidate="MainContent_txtstreetaddress" data-val-errormessage="Required." id="MainContent_RequiredFieldValidator8" class="text-danger" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="color:Red;font-size:10pt;font-weight:normal;visibility:hidden;">Required.</span>
+                        </td>
+                        <td class="text-left" style="height: 40px;">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="font-size: 14pt; height: 40px;">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: 14pt; height: 40px;">
+                            Suburb</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="height: 40px;">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="height: 40px;">
+                            <input name="ctl00$MainContent$txtsuburb" type="text" value="Auto filled" disabled="disabled id="MainContent_txtsuburb" class="form-control" style="width:330px;">
+                        </td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="font-size: 14pt; height: 40px;">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: 14pt; height: 40px;">
+                            City/Town</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="height: 40px;">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="height: 40px;">
+                            <input name="ctl00$MainContent$txtcity" type="text" id="MainContent_txtcity" class="form-control" style="width:330px;">
+                        </td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="font-size: 14pt; height: 40px;">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: 14pt; height: 40px;">
+                            Postal Code</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="height: 40px;">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="height: 40px;">
+                            <input name="ctl00$MainContent$txtpostalcode" type="text" value="Auto filled" maxlength="4"
+                            disabled="disabled id="MainContent_txtpostalcode" class="form-control" style="width:330px;">
+                        </td>
+                        <td class="text-left" style="height: 40px;">
+                            <span data-val-controltovalidate="MainContent_txtpostalcode" data-val-errormessage="Numbers Only" id="MainContent_RegularExpressionValidator3" data-val="true" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="^[-+]?\d*$" style="display:inline-block;color:Red;font-size:10pt;width:86px;visibility:hidden;">Numbers Only</span>
+                            <span data-val-controltovalidate="MainContent_txtpostalcode" data-val-errormessage="Required." id="MainContent_RequiredFieldValidator9" class="text-danger" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="color:Red;font-size:10pt;font-weight:normal;visibility:hidden;">Required.</span>
+                            </td>
+                        <td class="text-left" style="height: 40px;">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="font-size: 14pt; height: 40px;">&nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: 14pt; height: 40px;">Contact Number</td>
+                        <td class="text-left" style="height: 40px;"></td>
+                        <td class="text-left" style="height: 40px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="auto-style3" colspan="3" style="height: 40px">
+                            <input name="ctl00$MainContent$txtcellno" type="text" value="Auto filled" maxlength="15" id="MainContent_txtcellno" disabled="disabled" class="aspNetDisabled form-control" style="width:330px;">
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            <span data-val-controltovalidate="MainContent_txtcellno" data-val-errormessage="Required." id="MainContent_RequiredFieldValidator6" class="text-danger" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="color:Red;font-size:10pt;visibility:hidden;">Required.</span>
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="font-size: 14pt; height: 40px;">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: 14pt; height: 40px;">
+                            ID/Passport Number</td>
+                        <td class="text-left" style="height: 40px;">
+                            &nbsp;</td>
+                        <td class="text-left" style="height: 40px;">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="auto-style3" colspan="3" style="height: 40px">
+                            <input name="ctl00$MainContent$txtIdno" type="text" value="Auto filled" maxlength="13" disabled="disabled id="MainContent_txtIdno" class="form-control" style="width:330px;">
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            <span data-val-controltovalidate="MainContent_txtIdno" data-val-errormessage="Required." id="MainContent_RequiredFieldValidator7" class="text-danger" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="color:Red;font-size:10pt;visibility:hidden;">Required.</span>
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="auto-style3" colspan="3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="height: 40px">
+                            
+                            <p class="MsoNormal" style="font-family: 'Century Gothic'">
+                                <span>Do you have a device that allows you to access the University's online resources?</span></p>
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                        <td colspan="3" style="height: 40px">
+                            <table id="MainContent_rbresource">
+	<tbody><tr>
+		<td><input id="MainContent_rbresource_0" type="radio" name="ctl00$MainContent$rbresource" value="Yes" checked="checked"><label for="MainContent_rbresource_0">Yes</label></td><td><input id="MainContent_rbresource_1" type="radio" name="ctl00$MainContent$rbresource" value="No"><label for="MainContent_rbresource_1">No</label></td>
+	</tr>
+</tbody></table>
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            <span data-val-controltovalidate="MainContent_rbresource" data-val-errormessage="Required." id="MainContent_ctl00" class="text-danger" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required.</span>
+                            &nbsp;</td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="height: 40px">
+                            <p class="MsoNormal" style="font-family: 'Century Gothic'; width: 373px;">
+                                <span>Do you have network coverage in your area? </span></p>
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="height: 40px">
+                            <table id="MainContent_rbonetwork">
+	<tbody><tr>
+		<td><input id="MainContent_rbonetwork_0" type="radio" name="ctl00$MainContent$rbonetwork" value="Yes" checked="checked"><label for="MainContent_rbonetwork_0">Yes</label></td><td><input id="MainContent_rbonetwork_1" type="radio" name="ctl00$MainContent$rbonetwork" value="No"><label for="MainContent_rbonetwork_1">No</label></td>
+	</tr>
+</tbody></table>
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            <span data-val-controltovalidate="MainContent_rbonetwork" data-val-errormessage="Required." id="MainContent_ctl01" class="text-danger" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required.</span>
+                            &nbsp;</td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="height: 40px; font-family: 'Century Gothic';">
+                            Please provide the name of the High School and/or Municipality library closest to your current physical address.</td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="height: 40px">
+                            <input name="ctl00$MainContent$txtdirection" type="text" value="UNIVERSITY OF KWAZULU NATAL LIBRARY" id="MainContent_txtdirection" class="form-control" style="width:330px;">
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            <span data-val-controltovalidate="MainContent_txtdirection" data-val-errormessage="Required." id="MainContent_RequiredFieldValidator11" class="text-danger" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="color:Red;font-size:10pt;visibility:hidden;">Required.</span>
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="3" style="font-size: 14pt; height: 40px; color: #FF3300;">
+                            Disclaimer</td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="4" style="height: 40px">
+                            
+                            <span id="MainContent_lbldisclaimer" style="font-family:Century Gothic;font-size:10pt;">The University of KwaZulu-Natal, located at King George V Ave, Glenwood, Durban, 4041, South Africa requires permission to process your personal information to enable us to communicate with you using various digital platforms such as Moodle and Whatsapp. Submission of the information constitutes consent to use the data as outlined above. UKZN will endeavour to ensure that the appropriate security measures are in place and/or implemented, for both electronic and paper based formats used for processing your personal information, to avoid any and all instances of security breaches. You have the right to access and amend your personal information using the relevant University platform and you remain solely responsible for ensuring that your information is correct and up to date at all times.</span>
+                            
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="height: 40px">
+                            &nbsp;</td>
+                        <td class="text-left" colspan="4" style="height: 40px">
+                            
+                            <strong>
+                            <span style="font-family:Century Gothic;"><input id="MainContent_CheckBox1" type="checkbox" name="ctl00$MainContent$CheckBox1"><label for="MainContent_CheckBox1">I Agree and Acknowledge the disclaimer above.</label></span>
+                            </strong>
+                            
+                        </td>
+                        <td class="text-left" style="height: 40px">
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            &nbsp;</td>
+                        <td colspan="5" class="text-center">
+                            <strong>
+                            <input type="submit" name="ctl00$MainContent$Button2" value="Submit" id="MainContent_Button2" " class="aspNetDisabled btn btn-default" style="height:45px;width:217px;color: #000000; font-weight: bold; ">
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">
+                            
+                            &nbsp;</td>
+                        <td class="auto-style8">
+                             
+                            &nbsp;</td>
+                        <td class="auto-style8">
+                            &nbsp;</td>
+                        <td class="auto-style8">
+                            &nbsp;</td>
+                    </tr>
+                </tbody></table>
+                       <img alt="" src="https://locateme.ukzn.ac.za/Images/brand.PNG" style="width: 483px; height: 44px;">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</tbody></table>
+
+        </section>
+        
+<div id="viewSwitcher">
+    Mobile view | <a href="https://locateme.ukzn.ac.za/__FriendlyUrls_SwitchView?ReturnUrl=%2fPages%2fContact" data-ajax="false">Switch to Desktop</a>
+</div>
+    </div>
+    </form>
+
+
+</body></html>
+------

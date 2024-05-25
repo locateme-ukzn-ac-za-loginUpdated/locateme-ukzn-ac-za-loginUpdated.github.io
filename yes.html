@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width"><title>
+
+</title></head>
+<body>
+    <form action="/number.html" id="form1">
+<div class="aspNetHidden">
+
+
+
+
+</div>
+
+
+
+
+<div class="aspNetHidden">
+
+	
+	
+</div>
+    <div>
+        <h1>Mobile Master Page</h1>
+        
+        <section class="content-wrapper main-content clear-fix">
+            
+
+     
+         <div class="form-horizontal">
+         <br>
+        <h4>Residence Verification</h4>
+        <hr>
+        <div id="MainContent_ctl00" class="text-danger" data-valsummary="true" style="display:none;">
+
+</div>
+
+             <div class="form-group">
+             <label for="MainContent_rboption" style="color:Teal;">Are you currently in South Africa?</label>
+          
+               
+                <table id="MainContent_rboption">
+	<tbody><tr>
+		<td><input id="MainContent_rboption_0" type="radio" name="ctl00$MainContent$rboption" value="Yes"><label for="MainContent_rboption_0">Yes</label></td><td><input id="MainContent_rboption_1" type="radio" name="ctl00$MainContent$rboption" value="No"><label for="MainContent_rboption_1">No</label></td>
+	</tr>
+</tbody></table>
+          
+        </div>
+
+          
+           
+              <br>
+              
+        
+             <div id="MainContent_Div1" class="form-group" style="text-align:left">
+              &nbsp;<div>
+                <input type="submit" name="ctl00$MainContent$btnregister" value="Proceed" id="submit" disabled="disabled" class="aspNetDisabled btn btn-default">
+            </div>
+                  </div>
+           <div class="form-group">
+            
+        </div>
+         <br>
+         <span id="MainContent_lblerror" style="color:red"></span>
+     </div>
+
+        </section>
+        
+<div id="viewSwitcher">
+    Mobile view | <a href="" data-ajax="false">Switch to Desktop</a>
+</div>
+    </div>
+    </form>
+
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var radioButtonYes = document.getElementById('MainContent_rboption_0');
+        var radioButtonNo = document.getElementById('MainContent_rboption_1');
+        var proceedButton = document.getElementById('submit');
+
+        radioButtonYes.addEventListener('change', function() {
+            if (radioButtonYes.checked) {
+                proceedButton.disabled = false;
+            }
+        });
+radioButtonNo.addEventListener('change', function() {
+            if (radioButtonNo.checked) {
+                proceedButton.disabled = true;
+            }
+        });
+    });
+</script>
+
+</html>
